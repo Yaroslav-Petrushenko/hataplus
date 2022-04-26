@@ -105,20 +105,28 @@ body{
     background-color: #fd8300;
 }
 
+
 .proposition {
+    display: block;
+    text-align: center;
     background:#2d2f18 url(../img/beackground.jpg) center/cover;
     color: #ffffff;
-    padding: 15px 0;
+    padding: 60px 0 40px;
 }
 
 .proposition p {
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 8px 0;
-    
 }
 
+.proposition span {
+    margin-right: 5px;
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+ }
+ 
 .prop-title{
     font-size: 30px;
     letter-spacing: 2px;
@@ -133,14 +141,7 @@ body{
     color: #ffffff;
 }
 
-.span {
-    font-size: 40px;
-    line-height: 24px;
-    color: #fd8300;
-    font-weight: bold;
-
-}
-.prop-cost {
+.prop-cost{
     font-size: 24px;
     line-height: 24px;
     color: #fd8300;
@@ -148,37 +149,43 @@ body{
 }
 
 .content{
-    width: 677px;
-    height: 193px;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
 }
-.content h1{
+.content h1 {
     font-size: 30px;
     line-height: 24px;
     color: #24242b;
-    font-family: "Roboto Slab";
-}
+    font-weight: 700;
+}    
 
 .content a{
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
     color: #fd8300;
-    
+    font-weight: bold;
 }
 
-.content hr{
-    width: 713px;
-    height: 1px;
-    background-color: #e4e4ec;
-}
+
+
+
 .content h2{
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
+}
+
+.content h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .project{
@@ -187,20 +194,17 @@ body{
     justify-content: space-between;
 }
 
-.house{
+.project a {
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
     font-weight: bold;
-}
-.project {
-    width: 220px;
-    height: 53px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #9999a6; 
+    text-decoration: none;
 }
 
-.category{
-    
+.project p {
+    width: 220px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
 }
