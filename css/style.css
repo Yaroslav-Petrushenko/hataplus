@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.flex-btween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aic{
+    align-items: center;
+    
+}
+
+.header {
+    padding: 15.5px 0;
+    background-color: #1f1f56;
+    
+}
+
+.header ul{
+    margin: 0 -14px;
+    padding-left: 0;
+    list-style: none;
+    
+}
+
+.header li{
+    display: inline-block;
+    margin: 0 14px;
+
+}
+
+.menu{
+    display: inline;
+    
+}
+
+.menu a{
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover{
+    color: #fd8300;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-info{
+    padding: 20px 0;
+}
+
+.phones p,
+.messengers p{
+    margin: 10px 0;
+}
+
+.phones a{
+    font: bold 18px/24px Arial;
+    color: #25252c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.messengers a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+}
+
+.skype{
+    text-decoration: none;
+}
+
+.cta a{
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #25252c;
+    text-decoration: none;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    transition: all .25s ease;   
+}
+
+.cta a:hover{
+    color: #ffffff;
+    background-color: #fd8300;
+}
+
+.proposition {
+    background:#2d2f18 url(../img/beackground.jpg) center/cover;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.proposition p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 0;
+    
+}
+
+.prop-title{
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #ffffff;
+    font: "Roboto Slab";
+}
+
+.prop-text{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.span {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+
+}
+.prop-cost {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.content{
+    width: 677px;
+    height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.content h1{
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
+.content a{
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    
+}
+
+.content hr{
+    width: 713px;
+    height: 1px;
+    background-color: #e4e4ec;
+}
+.content h2{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+}
+
+.project{
+    margin-left: -40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.house{
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+}
+.project {
+    width: 220px;
+    height: 53px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6; 
+}
+
+.category{
+    
+}
