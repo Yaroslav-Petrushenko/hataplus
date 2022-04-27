@@ -210,11 +210,11 @@ body{
     color: #9999a6;
 }
 
-.right_menu{
-    margin-top: 10px;
-      
-}
 
+
+.category{
+    margin-top: 18px; 
+}
 .category p{
     margin-bottom: 0;
     margin-top: 0;
@@ -229,7 +229,6 @@ body{
 }
 
 .category ul{
-    
     width: 219px;
     list-style: none;
     padding: 0;
@@ -240,7 +239,9 @@ body{
     background-color: #9999a6;
     margin-top: 0;
     list-style: none;
+    
 }
+
 .category a{
     display: block;
     padding: 10px 15px;
@@ -250,9 +251,9 @@ body{
     line-height: 24px;
     color: #25252c;
     text-decoration: none;
-    transition: all 0.3s ease;
+    
 }
-.category nav :hover{
+.category li:hover{
     color: #fd8300;
 }
 
@@ -260,17 +261,35 @@ body{
     background-color: #ededf5;
 }
 
+.footer{
+    align-items: flex-start;
+    height: 205px;
+    background-color: #ededf5;
+}
+.footer a,
+.footer li{
+    text-decoration: none;
+    list-style: none;
+}
 .info{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
 }
 
-.leyba{
+.copy{
+    height: 45px;
+    background-color: #dcdce6;
+
+}
+
+.copytext{
     margin: 0 auto;
     text-align: center;
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
     font-family: "Arial";
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
