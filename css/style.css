@@ -1,295 +1,339 @@
 body{
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  
 }
 
-.wrapper{
-    margin: 0 auto;
-    max-width: 960px;
+sup {
+  font-size: 0.6em;
 }
 
-.flex-btween{
-    display: flex;
-    justify-content: space-between;
+.wrapper{ 
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .aic{
-    align-items: center;
-    
+  align-items: center; 
 }
 
 .header {
-    padding: 15.5px 0;
-    background-color: #1f1f56;
-    
+  padding: 15.5px 0;
+  background-color: #1f1f56;
+  
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 28px;
+}
+.colum{
+  width: 219px;
+  box-sizing: border-box;
 }
 
 .header ul{
-    margin: 0 -14px;
-    padding-left: 0;
-    list-style: none;
-    
+  margin: 0 -14px;
+  padding-left: 0;
+  list-style: none;
+  
 }
 
 .header li{
-    display: inline-block;
-    margin: 0 14px;
+  display: inline-block;
+  margin: 0 14px;
 
 }
 
 .menu{
-    display: inline;
-    
+  display: inline;
+  
 }
 
 .menu a{
-    letter-spacing: 2px;
-    line-height: 24px;
-    color: #b1b1d2;
-    text-decoration: none;
-    transition: all 0.5s ease;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: #b1b1d2;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .menu a:hover{
-    color: #fd8300;
+  color: #fd8300;
 }
 
 .social{
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact-info{
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .phones p,
-.messengers p{
-    margin: 10px 0;
+.messengers p {
+  margin: 10px 0;
 }
 
-.phones a{
-    font: bold 18px/24px Arial;
-    color: #25252c;
-    font-weight: bold;
-    text-decoration: none;
+.phones a {
+  font: bold 18px/24px Arial;
+  color: #25252c;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.messengers a{
-    font-size: 16px;
-    line-height: 24px;
-    color: #25252c;
+.messengers a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #25252c;
 }
 
 .skype{
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.cta a{
-    display: inline-block;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #25252c;
-    text-decoration: none;
-    border: 2px solid #fd8300;
-    border-radius: 25px;
-    transition: all .25s ease;   
+.cta {
+  text-align: right;
 }
 
-.cta a:hover{
-    color: #ffffff;
-    background-color: #fd8300;
+.cta a {
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #25252c;
+  text-decoration: none;
+  border: 2px solid #fd8300;
+  border-radius: 25px;
+  transition: all .25s ease;   
+}
+
+.cta a:hover {
+  color: #ffffff;
+  background-color: #fd8300;
 }
 
 
 .proposition {
-    display: block;
-    text-align: center;
-    background:#2d2f18 url(../img/beackground.jpg) center/cover;
-    color: #ffffff;
-    padding: 60px 0 40px;
+  display: block;
+  text-align: center;
+  background:#2d2f18 url(../img/beackground.jpg) center/cover;
+  padding: 55px 0 35px;
 }
 
 .proposition p {
-    margin: 0;
-    padding: 8px 0;
+  margin: 0;
 }
 
-.proposition span {
-    margin-right: 5px;
-    font-size: 40px;
-    line-height: 24px;
-    color: #fd8300;
-    font-weight: bold;
- }
- 
-.prop-title{
-    font-size: 30px;
-    letter-spacing: 2px;
-    line-height: 24px;
-    color: #ffffff;
-    font: "Roboto Slab";
+.prop-title {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
 }
 
-.prop-text{
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
+p.prop-text {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.prop-cost{
-    font-size: 24px;
-    line-height: 24px;
-    color: #fd8300;
-    font-weight: bold;
+.prop-cost {
+  font-size: 24px;
+  color: #fd8300;
+  font-weight: bold;
 }
 
-.about_company{
-    display: flex;
-    justify-content: space-between;
+.prop-cost span {
+  font-size: 40px;
 }
 
-.content{
-    font-size: 14px;
-    line-height: 24px;
-    color: #666666;
+.main-info {
+
+   
 }
+
 .content h1 {
-    font-size: 30px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-}    
-
-.content a{
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: underline;
-    color: #fd8300;
-    font-weight: bold;
+  font-size: 30px;
+  color: #24242b;
+  font-weight: 700
 }
 
-.content h2{
-    font-size: 24px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
+.content p {
+  max-width: 677px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  margin-top: 0;
 }
 
-.content h3{
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.content a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fd8300;
+  font-weight: bold;
 }
 
-.project{
-    display: flex;
-    justify-content: space-around;
+.hr {
+  margin: 28px 0;
+  border: none;
+  border-top: 1px solid #e4e4ec;
 }
 
-.project a {
-    font-size: 14px;
-    line-height: 24px;
-    color: #1f1f56;
-    font-weight: bold;
-    text-decoration: none;
+.h2 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #24242b;
+  font-weight: 700;
+  margin-bottom: 28px;
 }
 
-.project p {
-    width: 220px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #9999a6;
+.home{
+  margin: 0;
+  font-size: 13px;
+  color: #9999a6;
+  padding-bottom: 40px;
 }
 
-
-
-.category{
-    margin-top: 18px; 
-}
-.category p{
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 10px 15px;
-    font-size: 16px;
-    line-height: 24px;
-    background-color: #1f1f56;
-    color: #fff;
-    font-weight: bold;
-    font-family: "Roboto Slab";
-    
+.home h3 {
+  font-size: 14px;
+  line-height: 24px;
+  color: #1f1f56;
+  font-weight: bold;
 }
 
-.category ul{
-    width: 219px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.home p {
+  width: 220px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #9999a6;
 }
 
-.category li{
-    background-color: #9999a6;
-    margin-top: 0;
-    list-style: none;
-    
+.right-menu{
+  margin-top: 15px;
+  background-color: #e4e4ec;
+  min-width: 219px;
 }
 
-.category a{
-    display: block;
-    padding: 10px 15px;
-    border: 1px solid #aaa;
-    border-top: 0;
-    font-size: 14px;
-    line-height: 24px;
-    color: #25252c;
-    text-decoration: none;
-    
-}
-.category li:hover{
-    color: #fd8300;
+.right-menu p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #1f1f56;
+  padding: 13px 15px;
+  margin: 0;
+  border-radius: 3px 3px 0 0;
 }
 
-.all_info{
-    background-color: #ededf5;
+.right-menu ul {
+  padding: 0;
+  margin: 0;
 }
 
-.footer{
-    align-items: flex-start;
-    height: 205px;
-    background-color: #ededf5;
+.right-menu li {
+  list-style: none;
 }
-.footer a,
-.footer li{
-    text-decoration: none;
-    list-style: none;
+
+.right-menu a {
+  display: block;
+  padding: 13px 15px;
+  border: 1px solid #cdcddd;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0 0 3px 3px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #25252c;
+  text-decoration: none;
+  transition: all .25s ease; 
+}
+
+.right-menu a:hover{
+  color: #ffffff;
+  background-color: #fd8300;
+}
+
+.hide-menu {
+  background-color: #e4e4ec;
+}
+
+.hide-menu a {
+  padding-left: 30px;
+  color: #666666;
+
+}
+
+.footer {
+  background-color: #ededf5;
 }
 .info{
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
+  align-items: flex-start;
+  margin-top: 40px;
 }
 
-.copy{
-    height: 45px;
-    background-color: #dcdce6;
-
+.info a {
+  text-decoration: none; 
 }
 
-.copytext{
-    margin: 0 auto;
-    text-align: center;
-    font-size: 13px;
-    line-height: 18px;
-    color: #9999a6;
-    font-family: "Arial";
-    padding-top: 15px;
-    padding-bottom: 15px;
+.info li {
+  list-style: none;
 }
+
+.servise a {
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+}
+.company a {
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+}
+
+.number a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #25252c;
+  font-weight: bold;
+}
+
+.hata-mail a {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: #25252c;
+
+}
+.copy {
+  height: 45px;
+  background-color: #dcdce6;
+}
+
+.copytext {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  color: #9999a6;
+  font-family: "Arial";
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
