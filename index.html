@@ -63,7 +63,7 @@
             </div>
         </div>
     </header>
-    <main class="wrapper flex-between">
+    <main class="wrapper flex-between main">
         <div class="main-info">
             <section class="content">
                 <h1>Компанія “Хата Плюс”</h1>
@@ -81,8 +81,8 @@
                                <source srcset="img/house-edmonton.webp" type="image/webp">
                                <img src="img/house-edmonton.png" alt="">
                             </picture>
-                            <h3>EDMONTON (338 м2)</h3>
-                            <p>Загальна площа будови: 312 м2</p>
+                            <h3>EDMONTON <span>(338 м<sup>2</sup>)</span></h3>
+                            <p>Загальна площа будови: 312 м<sup>2</sup></p>
                             <p>Кількість спалень: 4</p>
                             <p>Гараж: 2 авто</p>   
                         </figcaption>
@@ -93,8 +93,8 @@
                                 <source srcset="img/house-montreal.webp" type="image/webp">
                                 <img src="img/house-montreal.png" alt="">
                             </picture>
-                            <h3>MONTREAL (332 м2)</h3>
-                            <p>Загальна площа будови: 290 м2</p>
+                            <h3>MONTREAL <span>(332 м<sup>2</sup>)</span></h3>
+                            <p>Загальна площа будови: 290 м<sup>2</sup></p>
                             <p>Кількість спалень: 3</p>
                             <p>Гараж: 2 авто</p>
                         </figcaption>
@@ -105,8 +105,8 @@
                                 <source srcset="img/house-calgary.webp" type="image/webp">
                                 <img src="img/house-calgary.png" alt="">
                             </picture>
-                            <h3>CALGARY (294 м2)</h3>
-                            <p>Загальна площа будови: 272 м2</p>
+                            <h3>CALGARY <span>(294 м<sup>2</sup>)</span></h3>
+                            <p>Загальна площа будови: 272 м<sup>2</sup></p>
                             <p>Кількість спалень: 3</p>
                             <p>Гараж: 2 авто</p> 
                         </figcaption>
@@ -115,8 +115,8 @@
 
             </section>
         </div>
-        <aside>
-            <nav class="right-menu">
+        <aside class="sidebar">
+            <nav class="aside-menu">
                 <p>Категорії проектів</p>
                 <ul>
                     <li>
@@ -156,50 +156,37 @@
     <footer>
         <div class="footer">
             <div class="wrapper">
-                    <div class="info row">
-                        <div class="servise colum">
-                            <nav>
-                                <ul>
+                <div class="row">  
+                                <ul class="colum footer-menu">
                                     <li><a href="#">Будинки</a></li>
                                     <li><a href="#">Інфраструктура</a></li>
                                     <li><a href="#">Сервіс</a></li>
                                     <li><a href="#">Новини</a></li>
                                 </ul>
-                            </nav>    
-                        </div>
-                        <div class="company colum">
-                            <nav>
-                                <ul>
+
+                                <ul class="colum footer-menu">
                                     <li><a href="#">Про компанію</a></li>
                                     <li><a href="#">Страхування</a></li>
                                     <li><a href="#">Контакти</a></li>
                                 </ul>
-                            </nav>    
-                        </div>
-                        <div class="number">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">+38(097) 100-25-25</a></li>
-                                    <li><a href="#">+38(097) 100-25-25</a></li>
-                                </ul>
-                            </nav>    
-                        </div>
-                        <div class="hata-mail">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">hataplus@hata.com.ua</a></li>
-                                    <li class="skype"><a href="#">hataplus</a></li>
-                                </ul>
-                            </nav>    
-                        </div>
-                    </div>
+                            
+                                <div class="phones colum">
+                                    <p><a class="tel" href="tel:+380975552525">+38 (097) 100 25 25</a></p>
+                                    <p><a href="tel:+380975552525">+38 (097) 100 25 25</a></p>
+                                </div>
+                                <div class="messengers colum">
+                                        <p><a class="mail" href="mailto:hataplus@hata.com">hataplus@hata.com</a></p>
+                                        <p><a class="skype" href="skype:hataplus">hataplus</a></p>
+                                </div>
+                </div>    
             </div>                      
         </div>
-    </footer>
+    
     <div class="copy">
         <div class="wrapper">   
             <p class="copytext">&copy;Будівельна компанія “Хата Плюс” 2018.</p>
         </div>
-    </div>      
+    </div> 
+    </footer>     
 </body>
 </html>

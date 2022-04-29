@@ -8,6 +8,12 @@ sup {
   font-size: 0.6em;
 }
 
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #e4e4ec;
+}
+
 .wrapper{ 
   margin: 0 auto;
   max-width: 960px;
@@ -162,15 +168,38 @@ p.prop-text {
   font-size: 40px;
 }
 
-.main-info {
-
-   
+.main{
+  padding: 35px 0 45px;
 }
 
-.content h1 {
-  font-size: 30px;
+.main-info{
+  max-width: 713px;
+}
+.main-info h1,
+.main-info h2{
   color: #24242b;
+  font-family: "Roboto Slab"; 
+}
+
+.main-info h1 {
+  margin-top: 5px;
+  font-size: 30px;
   font-weight: 700
+}
+
+.main-info h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.main-info a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fd8300;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .content p {
@@ -181,27 +210,6 @@ p.prop-text {
   margin-top: 0;
 }
 
-.content a {
-  font-size: 14px;
-  line-height: 24px;
-  color: #fd8300;
-  font-weight: bold;
-}
-
-.hr {
-  margin: 28px 0;
-  border: none;
-  border-top: 1px solid #e4e4ec;
-}
-
-.h2 {
-  font-size: 24px;
-  line-height: 24px;
-  color: #24242b;
-  font-weight: 700;
-  margin-bottom: 28px;
-}
-
 .home{
   margin: 0;
   font-size: 13px;
@@ -210,6 +218,8 @@ p.prop-text {
 }
 
 .home h3 {
+  margin: 5px 0 0;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
   color: #1f1f56;
@@ -217,42 +227,46 @@ p.prop-text {
 }
 
 .home p {
-  width: 220px;
+  margin: 0;
   font-size: 13px;
   line-height: 18px;
   color: #9999a6;
 }
 
-.right-menu{
-  margin-top: 15px;
-  background-color: #e4e4ec;
-  min-width: 219px;
+.home h3 span {
+  text-transform: lowercase;
 }
 
-.right-menu p {
-  font-size: 16px;
-  line-height: 24px;
+.aside-menu{
+  position: sticky;
+  top: 35px;
+  
+  
+}
+
+.aside-menu p {
   color: #fff;
-  font-weight: 700;
   background-color: #1f1f56;
-  padding: 13px 15px;
+  padding: 10px 15px;
   margin: 0;
+  font: 700 16px/1.5em "Roboto Slab";
   border-radius: 3px 3px 0 0;
 }
 
-.right-menu ul {
+.aside-menu ul {
+  background-color: #e4e4ec;
   padding: 0;
   margin: 0;
 }
 
-.right-menu li {
+.aside-menu li {
   list-style: none;
 }
 
-.right-menu a {
+.aside-menu a {
   display: block;
-  padding: 13px 15px;
-  border: 1px solid #cdcddd;
+  padding: 10px 15px;
+  border-top: 1px solid #cdcddd;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
@@ -264,7 +278,7 @@ p.prop-text {
   transition: all .25s ease; 
 }
 
-.right-menu a:hover{
+.aside-menu a:hover{
   color: #ffffff;
   background-color: #fd8300;
 }
@@ -280,60 +294,41 @@ p.prop-text {
 }
 
 .footer {
+  padding: 30px 0 20px;
   background-color: #ededf5;
 }
-.info{
-  align-items: flex-start;
-  margin-top: 40px;
-}
 
-.info a {
-  text-decoration: none; 
-}
-
-.info li {
+.footer-menu {
+  margin: 10px 0;
+  padding: 0;
+  letter-spacing: none;
   list-style: none;
+  
 }
-
-.servise a {
+.footer-menu a {
+  text-decoration: none;
   font-size: 14px;
   line-height: 26px;
   color: #666666;
-}
-.company a {
-  font-size: 14px;
-  line-height: 26px;
-  color: #666666;
+  transition: all .25s ease;
+  
 }
 
-.number a {
-  font-size: 18px;
-  line-height: 24px;
-  color: #25252c;
-  font-weight: bold;
-}
-
-.hata-mail a {
-  font-size: 16px;
-  line-height: 24px;
+.footer-menu a:hover{
   text-decoration: underline;
-  color: #25252c;
-
+  color: #fd8300;
 }
 .copy {
-  height: 45px;
-  background-color: #dcdce6;
-}
-
-.copytext {
-  margin: 0 auto;
-  text-align: center;
   font-size: 13px;
   line-height: 18px;
-  color: #9999a6;
-  font-family: "Arial";
-  padding-top: 15px;
-  padding-bottom: 15px;
+  color: #9999a6;  
+  background-color: #dcdce6;
+  text-align: center;
+}
+
+.copy p {
+  margin: 0;
+  padding: 13.5px 0;
 }
 
 
