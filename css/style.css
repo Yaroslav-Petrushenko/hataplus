@@ -14,6 +14,10 @@ hr {
   border-top: 1px solid #e4e4ec;
 }
 
+a {
+  position: relative;
+}
+
 .wrapper{ 
   margin: 0 auto;
   max-width: 960px;
@@ -76,13 +80,49 @@ hr {
   color: #fd8300;
 }
 
-.social{
-  display: flex;
-  justify-content: flex-end;
+.social a{
+  display: block;
+  background: url(../img/sprite.png) no-repeat;
+  
+}
+
+a.fb {
+  width: 10px;
+  height: 19px;
+  background-position: -2px -1px;    
+}
+
+a.in {
+  width: 19px;
+  height: 19px;
+  background-position: -13px -1px;
+}
+
+a.tw {
+  width: 18px;
+  height: 15px;
+  background-position: -33px -2px;
+}
+
+a.fb:hover{
+  background-position: -1px -22px;
+}
+
+a.tw:hover{
+  background-position: -34px -23px;
+}
+
+a.in:hover{
+  background-position: -13px -22px ;
 }
 
 .contact-info{
   padding: 20px 0;
+}
+
+.phones,
+.messengers {
+  padding-left: 48px;
 }
 
 .phones p,
@@ -97,14 +137,45 @@ hr {
   text-decoration: none;
 }
 
+.tel:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 2px;
+  width: 16px;
+  height: 17px;
+  background: url(../img/sprite.png) no-repeat -53px -1px;
+}
+
+
 .messengers a {
   font-size: 16px;
   line-height: 24px;
   color: #25252c;
 }
 
+.mail:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 2px;
+  width: 17px;
+  height: 13px;
+  background: url(../img/sprite.png) no-repeat -56px -24px;
+}
+
 .skype{
   text-decoration: none;
+}
+
+.skype:before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 1px;
+  width: 18px;
+  height: 19px;
+  background: url(../img/sprite.png) no-repeat -71px -1px;
 }
 
 .cta {
@@ -331,4 +402,70 @@ p.prop-text {
   padding: 13.5px 0;
 }
 
+.main-price {
+  max-width: 960px;
+}
 
+.main-price p{
+  margin: 0;
+}
+
+.main-price a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fd8300;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.content-price p {
+  max-width: 960px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  margin-top: 0;
+}
+.price-table {
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.price-table table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price-table th{
+  background-color: #1f1f56;
+  color: #ffffff;
+  font: 700 14px/1.5em "Roboto Slab";
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.price-table td {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  background-color: #e4e4ec;
+  padding: 8.5px 20px;
+  border: 1px solid #cdcddd;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+
+}
+
+.price-table tr{
+  transition: all .25s ease;
+}
+
+.price-table tr:hover{
+  color: #fff;
+  background-color: #fd8300;
+}
+
+.cost{
+  text-align: right;
+}
