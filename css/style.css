@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/RobotoSlab-Bold.eot');
+  src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+      url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+      url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body{
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -410,13 +422,19 @@ p.prop-text {
   margin: 0;
 }
 
-.main-price a {
+.main-info a {
   font-size: 14px;
   line-height: 24px;
   color: #fd8300;
   font-weight: bold;
   text-decoration: underline;
+  transition: all .25s ease;
 }
+
+.main-info a:hover{
+  text-decoration: none;
+}
+
 
 .content-price p {
   max-width: 960px;
@@ -424,6 +442,10 @@ p.prop-text {
   line-height: 24px;
   color: #666;
   margin-top: 0;
+}
+
+.popular-projects{
+  max-width: 960px;
 }
 .price-table {
   border-radius: 3px;
