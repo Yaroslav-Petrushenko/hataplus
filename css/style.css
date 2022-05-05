@@ -38,6 +38,9 @@ a {
 .aic{
   align-items: center; 
 }
+header{
+  box-shadow: 10px 5px 5px #f3f3f3;
+}
 
 .header {
   padding: 15.5px 0;
@@ -90,6 +93,7 @@ a {
 
 .menu a:hover{
   color: #fd8300;
+  text-shadow: 0 0 2px #fd8300;
 }
 
 .social a{
@@ -381,11 +385,11 @@ p.prop-text {
   transition: all .25s ease; 
 }
 
-.aside-menu > ul > li+li> a {
+.aside-menu > ul > li + li > a {
   border-top: 1px solid #cdcddd;
 }
 
-.aside-menu > ul > li:hover > {
+.aside-menu > ul > li:hover > a {
   color: #fff;
   background-color: #fd8300;
 }
@@ -394,7 +398,7 @@ p.prop-text {
   color: #fff;
   background-color: #fd8300;
 }
-.aside-menu > ul >li >a:before {
+.aside-menu > ul > li > a:before {
   content: '';
   position: absolute;
   right: 15px;
@@ -407,7 +411,7 @@ p.prop-text {
   transition: all .5s ease;
 }
 
-.aside-menu > ul >li:hover > a:before{
+.aside-menu > ul > li:hover > a:before{
   top: 16px;
   border-color: #fff;
   transform: rotate(45deg);
@@ -418,6 +422,7 @@ p.prop-text {
 }
 
 .hide-menu a:hover{
+  color: #666666;
   background-color: #cecedd;
 }
 
@@ -490,7 +495,6 @@ p.prop-text {
   text-decoration: none;
 }
 
-
 .content-price p {
   max-width: 960px;
   font-size: 14px;
@@ -498,6 +502,7 @@ p.prop-text {
   color: #666;
   margin-top: 0;
 }
+
 
 .popular-projects{
   max-width: 960px;
@@ -533,13 +538,10 @@ p.prop-text {
   border-right: 0;
 
 }
-
-.price-table tr{
+tr{
   transition: all .25s ease;
 }
-
-.price-table tr:hover{
-  color: #fff;
+tr:hover{
   background-color: #fd8300;
 }
 
