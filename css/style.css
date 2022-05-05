@@ -39,7 +39,8 @@ a {
   align-items: center; 
 }
 header{
-  box-shadow: 10px 5px 5px #f3f3f3;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+  background-color: #fff;
 }
 
 .header {
@@ -374,10 +375,6 @@ p.prop-text {
 .aside-menu a {
   display: block;
   padding: 10px 15px;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-radius: 0 0 3px 3px;
   font-size: 14px;
   line-height: 24px;
   color: #25252c;
@@ -504,6 +501,7 @@ p.prop-text {
 }
 
 
+
 .popular-projects{
   max-width: 960px;
 }
@@ -521,30 +519,43 @@ p.prop-text {
 .price-table th{
   background-color: #1f1f56;
   color: #ffffff;
+  text-align: left;
   font: 700 14px/1.5em "Roboto Slab";
   padding: 12px 20px;
-  text-align: left;
+  border: 0;
 }
 
 .price-table td {
   font-size: 14px;
-  line-height: 24px;
-  color: #666;
-  background-color: #e4e4ec;
+  line-height: 24px; 
   padding: 8.5px 20px;
   border: 1px solid #cdcddd;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-
-}
-tr{
-  transition: all .25s ease;
-}
-tr:hover{
-  background-color: #fd8300;
 }
 
-.cost{
+.price-table tr:first-child td {
+  border-top: none;
+}
+
+.price-table th:last-child {
   text-align: right;
 }
+
+tbody tr:hover{
+  color: #fff;
+  background-color: #fd8300;
+
+}
+
+tbody tr{
+  color: #666;
+  background-color: #e4e4ec;
+  transition: all .25s ease;
+}
+
+.cost {
+  text-align: right;
+}
+
