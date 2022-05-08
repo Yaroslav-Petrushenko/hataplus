@@ -432,45 +432,6 @@ p.prop-text {
   color: #666666;
 
 }
-
-.footer {
-  padding: 30px 0 20px;
-  background-color: #ededf5;
-}
-
-.footer-menu {
-  margin: 10px 0;
-  padding: 0;
-  letter-spacing: none;
-  list-style: none;
-  
-}
-.footer-menu a {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 26px;
-  color: #666666;
-  transition: all .25s ease;
-  
-}
-
-.footer-menu a:hover{
-  text-decoration: underline;
-  color: #fd8300;
-}
-.copy {
-  font-size: 13px;
-  line-height: 18px;
-  color: #9999a6;  
-  background-color: #dcdce6;
-  text-align: center;
-}
-
-.copy p {
-  margin: 0;
-  padding: 13.5px 0;
-}
-
 .main-price {
   max-width: 960px;
 }
@@ -559,3 +520,80 @@ tbody tr{
   text-align: right;
 }
 
+
+.footer {
+  padding: 30px 0 20px;
+  background-color: #ededf5;
+}
+
+.footer-menu {
+  margin: 10px 0;
+  padding: 0;
+  letter-spacing: none;
+  list-style: none;
+  
+}
+.footer-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+  transition: all .25s ease;
+  
+}
+
+.footer-menu a:hover{
+  text-decoration: underline;
+  color: #fd8300;
+}
+.copy {
+  font-size: 13px;
+  line-height: 18px;
+  color: #9999a6;  
+  background-color: #dcdce6;
+  text-align: center;
+}
+
+.copy p {
+  margin: 0;
+  padding: 13.5px 0;
+}
+.information h3 {
+  font-size: 24px;
+  color: #24242b;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 14px;
+  color: #24242b;
+  font-weight: 700;
+}
+
+.coll {
+  font-size: 18px;
+  color: #25252c;
+  font-weight: bold;
+}
+
+.hata-mail {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #25252c;
+}
+.our-ofice p,
+.advice p,
+.props p {
+  font-size: 14px;
+  color: #666666;
+}
+.advice p {
+  padding-right: 50px;
+}
+.props p {
+  padding-right: 81px;
+}
+
+.maps {
+  margin: 40px 0;
+}
