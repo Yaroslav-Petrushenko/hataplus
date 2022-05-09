@@ -558,10 +558,18 @@ tbody tr{
   margin: 0;
   padding: 13.5px 0;
 }
-.information h3 {
+.information h2 {
+  margin: 36px 0 15px 0;
   font-size: 24px;
   color: #24242b;
   font-weight: 700;
+  font-family: "Roboto Slab";
+}
+.information h3 {
+  font-size: 14px;
+  color: #24242b;
+  font-weight: 700;
+  font-family: "Roboto Slab";
 }
 
 .title {
@@ -574,24 +582,33 @@ tbody tr{
   font-size: 18px;
   color: #25252c;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .hata-mail {
   font-size: 16px;
   text-decoration: underline;
   color: #25252c;
+  font-family: "Arial";
+}
+.our-contacts {
+  margin: -10px 0;
 }
 .our-ofice p,
 .advice p,
 .props p {
   font-size: 14px;
   color: #666666;
+  font-family: "Arial";
 }
 .advice p {
   padding-right: 50px;
 }
 .props p {
   padding-right: 81px;
+  line-height: 24px;
+  color: #666666;
+  font-family: "Arial";
 }
 
 .maps {
