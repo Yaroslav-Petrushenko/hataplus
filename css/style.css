@@ -662,9 +662,11 @@ tbody tr{
 }
 .text {
   max-width: 462px;
+  min-height: 105px;
   width: 100%;
   height: 105px;
   border-radius: 3px;
+  resize: vertical;
 }
 .cta2 {
   text-align: right;
@@ -688,4 +690,43 @@ tbody tr{
 .cta2 a:hover {
   color: #25252c;
   background-color: #fff;
+}
+
+.check-box {
+  visibility: hidden;
+  position: absolute;
+}
+
+.check-box + label {
+  position: relative;
+  padding: 0 27px;
+  margin-left: 30px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #666666;
+}
+.check-box + label:after {
+  left: 4px;
+  top: 2px;
+}
+.check-box:checked + label:after {
+  width: 7px;
+  height: 4px;
+  border-right: 2px solid #1f1f56;
+  border-top: 2px solid #1f1f56;
+  transform: rotate(135deg);
+}
+.check-box + label:before, 
+.check-box + label:after {
+  content: "";
+  position: absolute;
+}
+.check-box + label:before {
+  left: 0;
+  top: -2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #c5c5d4;
 }
