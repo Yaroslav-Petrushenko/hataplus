@@ -802,27 +802,20 @@ tbody tr{
     }
   }
   @media screen and (max-width: 931px){
-    .main-info p,
-    .main-info h1,
-    .main-info h2,
-    .main-info h3 {
+    .main-info h2 {
         text-align: center;
-        
       }
     }
   
 @media screen and (min-width: 930px) {
   .footer {
     
-    text-align: left;
+    
   }
 }
 
 @media screen and (max-width: 931px){
-  .main-price p,
-  .main-price h1,
   .main-price h2,
-  .main-price h3,
   .information h2 {
       text-align: center;
       
