@@ -56,7 +56,7 @@ header{
 
 .row{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 28px;
   row-gap: 28px;
@@ -261,13 +261,38 @@ p.prop-text {
 .prop-cost span {
   font-size: 40px;
 }
-
+.main-price h1 {
+  margin-top: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    
+}
+.main-price h2{
+  font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+.main-price a {
+  font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all .25s ease;
+}
 .main{
   padding: 35px 0 45px;
+  flex-wrap: wrap-reverse;
 }
 
 .main-info{
-  max-width: 713px;
+  
+  width: 100%;
 }
 .main-info h1,
 .main-info h2{
@@ -295,9 +320,12 @@ p.prop-text {
   font-weight: bold;
   text-decoration: none;
 }
+.main-info p {
+  text-align: left;
+}
 
 .content p {
-  max-width: 677px;
+  
   font-size: 14px;
   line-height: 24px;
   color: #666;
@@ -346,6 +374,7 @@ p.prop-text {
 
 .aside-menu{
   position: sticky;
+  
   top: 35px;
   border-radius: 3px;
   overflow: hidden;
@@ -353,6 +382,8 @@ p.prop-text {
 
 .sidebar{
   min-width: 219px;
+  flex: 0 0 100%;
+  
 }
 .aside-menu p {
   color: #fff;
@@ -434,6 +465,7 @@ p.prop-text {
 }
 .main-price {
   max-width: 960px;
+  width: 100%;
 }
 
 .main-price p{
@@ -522,13 +554,14 @@ tbody tr{
 
 
 .footer {
+  text-align: center;
   padding: 30px 0 20px;
   background-color: #ededf5;
 }
 
 .footer-menu {
   margin: 10px 0;
-  padding: 0;
+  
   letter-spacing: none;
   list-style: none;
   
@@ -627,6 +660,7 @@ tbody tr{
 .form-menu,
 .cta-form {
   display: flex;
+  
   justify-content: space-between;
 }
 .form-menu label {
@@ -703,7 +737,6 @@ tbody tr{
   margin-left: 30px;
   font-size: 13px;
   line-height: 21px;
-  color: #666666;
 }
 .check-box + label:after {
   left: 4px;
@@ -730,3 +763,67 @@ tbody tr{
   background-color: #ffffff;
   border: 1px solid #c5c5d4;
 }
+
+
+@media screen and (min-width: 931px ) {
+  .main {
+      flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px ) {
+  .menu {
+    display: none;
+  }
+}  
+
+@media screen and (min-width: 931px){
+.sidebar {
+    flex: 0 0 219px;
+    width: 219px;
+    
+  }
+}
+
+@media screen and (min-width: 980px){
+  .row {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 931px){
+  .main-info {
+      max-width: 713px;
+    }
+    .content p {
+
+      max-width: 677px;
+    }
+  }
+  @media screen and (max-width: 931px){
+    .main-info p,
+    .main-info h1,
+    .main-info h2,
+    .main-info h3 {
+        text-align: center;
+        
+      }
+    }
+  
+@media screen and (min-width: 930px) {
+  .footer {
+    
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 931px){
+  .main-price p,
+  .main-price h1,
+  .main-price h2,
+  .main-price h3,
+  .information h2 {
+      text-align: center;
+      
+    }
+  }
