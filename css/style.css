@@ -765,6 +765,7 @@ tbody tr{
 }
 
 
+
 @media screen and (min-width: 931px ) {
   .main {
       flex-wrap: nowrap;
@@ -827,3 +828,9 @@ tbody tr{
       
     }
   }
+
+@media screen and (max-width: 960px) {
+    .stick:before {
+     display: none;
+    }
+  }  
