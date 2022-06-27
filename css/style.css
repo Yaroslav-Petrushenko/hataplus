@@ -33,6 +33,7 @@ a {
 .wrapper{ 
   margin: 0 auto;
   max-width: 960px;
+  padding: 0 15px;
 }
 
 .aic{
@@ -500,7 +501,7 @@ p.prop-text {
 }
 .price-table {
   border-radius: 3px;
-  overflow: hidden;
+  overflow-x: scroll;
   margin: 25px 0;
 }
 
@@ -550,6 +551,7 @@ tbody tr{
 
 .cost {
   text-align: right;
+  min-width: 56px;
 }
 
 
@@ -646,10 +648,11 @@ tbody tr{
 
 .maps {
   margin: 17px 0 40px;
+  width: 49%;
 }
 .maps iframe {
   border: none;
-  width: 465px;
+  width: 100%;
   height: 300px;
 }
 
@@ -660,7 +663,7 @@ tbody tr{
 .form-menu,
 .cta-form {
   display: flex;
-  
+  width: 100%;
   justify-content: space-between;
 }
 .form-menu label {
@@ -695,7 +698,7 @@ tbody tr{
   height: 40px;
 }
 .text {
-  max-width: 462px;
+  
   min-height: 105px;
   width: 100%;
   height: 105px;
@@ -763,6 +766,16 @@ tbody tr{
   background-color: #ffffff;
   border: 1px solid #c5c5d4;
 }
+.main {
+  padding: 0 15px;
+}
+.hamburger {
+  display: none;
+}
+.hamburger:hover .menu {
+  display: block;
+}
+
 
 
 
@@ -771,18 +784,37 @@ tbody tr{
       flex-wrap: nowrap;
   }
 }
+@media screen and (min-width: 768px ){
 
-@media screen and (max-width: 768px ) {
-  .menu {
-    display: none;
+  .wrapper{
+    padding: 0 15px;
   }
-}  
+  
+}
+
+
+@media screen and (max-width: 520px ){
+
+  .information{
+    padding: 0 15px;
+  }
+  .our-contacts {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 520px ){
+  
+}
+
+
+
 
 @media screen and (min-width: 931px){
 .sidebar {
     flex: 0 0 219px;
     width: 219px;
-    
   }
 }
 
@@ -807,9 +839,9 @@ tbody tr{
       }
     }
   
-@media screen and (min-width: 930px) {
-  .footer {
-    
+@media screen and (max-width: 990px) {
+  .cta {
+    padding-bottom: 10px;
     
   }
 }
@@ -827,3 +859,54 @@ tbody tr{
      display: none;
     }
   }  
+
+@media screen and (max-width: 978px) {
+    .feedback-form,
+    
+    .cta-form {
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 978px) {
+  .form-menu {
+    flex-direction: column;
+  }
+  .form-menu label {
+    width: 100%;
+  }
+  .feedback-form {
+    width: 100%;
+    min-width: 300px;
+  }
+  .maps {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: flex;
+      flex-direction: column;
+  }
+  .header ul {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger span {
+      margin: 4px 0;
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      
+  } 
+  .menu {
+    display: none;
+}
+}
+
+
+
