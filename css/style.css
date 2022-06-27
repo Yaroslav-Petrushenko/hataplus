@@ -382,6 +382,7 @@ p.prop-text {
 }
 
 .sidebar{
+  padding-top: 15px;
   min-width: 219px;
   flex: 0 0 100%;
   
@@ -766,9 +767,7 @@ tbody tr{
   background-color: #ffffff;
   border: 1px solid #c5c5d4;
 }
-.main {
-  padding: 0 15px;
-}
+
 .hamburger {
   display: none;
 }
@@ -784,12 +783,11 @@ tbody tr{
       flex-wrap: nowrap;
   }
 }
-@media screen and (min-width: 768px ){
 
-  .wrapper{
-    padding: 0 15px;
+@media screen and (max-width: 990px ) {
+  .main {
+      padding: 0 15px;
   }
-  
 }
 
 
@@ -842,7 +840,10 @@ tbody tr{
 @media screen and (max-width: 990px) {
   .cta {
     padding-bottom: 10px;
-    
+  
+  }
+  .checkbox {
+    padding-bottom: 30px;
   }
 }
 
@@ -861,10 +862,13 @@ tbody tr{
   }  
 
 @media screen and (max-width: 978px) {
-    .feedback-form,
+    .feedback-form h3 {
+      text-align: center;
+    }
     
     .cta-form {
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       padding-bottom: 10px;
     }
 }
@@ -882,6 +886,7 @@ tbody tr{
   }
   .maps {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -893,20 +898,62 @@ tbody tr{
   .header ul {
     padding-left: 15px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .hamburger span {
-      margin: 4px 0;
-      width: 30px;
-      height: 3px;
-      background-color: #fff;
-      
-  } 
-  .menu {
+  .home{
+    padding-bottom: 5px;
+  }
+  .row {
+    row-gap: 0;
+  }
+  .hoMe {
+    padding-bottom: 40px;
+  }
+  .menu{
     display: none;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+  .hamburger {
+  display: flex;
+  flex-direction: column;
+  
+}
+.hamburger span {
+  margin: 4px 0;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.menu {
+  display: none;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 55px;
+  background-color: #e4e4ec;
+  z-index: 1;
+}
+
+.menu a {
+  display: block;
+  
+  padding: 10px 20px;
+  color: #25252c;
+  line-height: 24px;
+  font-weight: 700;
+}
+.menu li {
+  display: flex;
+  flex-direction: column;
+}
+.active-burger {
+  display: block;
 }
 }
-
-
-
