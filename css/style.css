@@ -385,6 +385,7 @@ p.prop-text {
   padding-top: 15px;
   min-width: 219px;
   flex: 0 0 100%;
+  padding-bottom: 20px;
   
 }
 .aside-menu p {
@@ -897,6 +898,7 @@ tbody tr{
   }
   .header ul {
     padding-left: 15px;
+    margin: 0;
   }
   .home{
     padding-bottom: 5px;
